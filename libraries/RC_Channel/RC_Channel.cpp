@@ -915,7 +915,7 @@ void RC_Channel::do_aux_function_avoid_proximity(const AuxSwitchPos ch_flag)
 #endif // !APM_BUILD_ArduPlane
 }
 
-#if AP_CAMERA_ENABLED
+#if AP_CAMERA_ENABLED   // TODO: Create Second Camera Enabled
 void RC_Channel::do_aux_function_camera_trigger(const AuxSwitchPos ch_flag)
 {
     if (ch_flag == AuxSwitchPos::HIGH) {
